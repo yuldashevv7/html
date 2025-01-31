@@ -1,0 +1,192 @@
+/* Umumiy dizayn */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.search-container input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+/* Asosiy kontent */
+main {
+  padding: 20px;
+}
+
+.video-player-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+video {
+  width: 70%;
+  border-radius: 10px;
+  max-height: 500px;
+}
+
+.video-details {
+  width: 25%;
+  padding-left: 20px;
+}
+
+.video-details h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.video-details p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.video-actions {
+  margin-top: 15px;
+}
+
+.video-actions button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.video-actions button:hover {
+  background-color: #444;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-item {
+  width: 30%;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+
+.video-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.video-item p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .comments-section {
+  margin-top: 20px;
+}
+
+footer .comments-section h4 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+footer .comment {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+footer .comment p {
+  font-size: 1.1em;
+}
+
+footer input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+footer button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+footer button:hover {
+  background-color: #444;
+}
+
+/* Mobil uchun moslashuv */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-player-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-details {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .video-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-item {
+    width: 80%;
+  }
+}

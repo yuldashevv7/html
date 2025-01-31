@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Mini YouTube</div>
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Izlash...">
+  </div>
+</header>
+
+<main>
+  <div class="video-player-container">
+    <video id="main-video" controls>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JnjZM2qghZM?si=-IMnXmEGurjIyxUp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      Brauzeringiz video formatini qo'llab-quvvatlamaydi.
+    </video>
+    <div class="video-details">
+      <h2 id="video-title">Video Sarlavhasi</h2>
+      <p id="video-description">Bu yerda video tavsifi bo'ladi...</p>
+      <div class="video-actions">
+        <button id="like-btn">Like</button>
+        <button id="dislike-btn">Dislike</button>
+        <span id="like-count">1000 Like</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-list">
+    <h3>Videolar ro'yxati:</h3>
+    <div class="video-item" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-title="Qiziqarli Video 1" data-description="Bu video YouTube o'xshash platformada namoyish etiladi.">
+      <img src="https://via.placeholder.com/150" alt="Video 1">
+      <p>Qiziqarli Video 1</p>
+    </div>
+    <div class="video-item" data-video="https://www.w3schools.com/html/movie.mp4" data-title="Qiziqarli Video 2" data-description="Bu video boshqa bir qiziqarli mavzu haqida.">
+      <img src="https://via.placeholder.com/150" alt="Video 2">
+      <p>Qiziqarli Video 2</p>
+    </div>
+    <div class="video-item" data-video="https://www.w3schools.com/html/horse.mp4" data-title="Qiziqarli Video 3" data-description="Bu video oddiy va yaxshi mavzu haqida.">
+      <img src="https://via.placeholder.com/150" alt="Video 3">
+      <p>Qiziqarli Video 3</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="comments-section">
+    <h4>Sharhlar</h4>
+    <div class="comment">
+      <p><strong>Foydalanuvchi 1:</strong> Juda qiziqarli video!</p>
+    </div>
+    <div class="comment">
+      <p><strong>Foydalanuvchi 2:</strong> Yaxshi mavzu, omad tilayman!</p>
+    </div>
+    <input type="text" id="comment-box" placeholder="Sharh qoldiring..." />
+    <button id="submit-comment">Yuborish</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
